@@ -3,9 +3,7 @@ package eric.acosta.dao.impl;
 import eric.acosta.dao.IDaoConexion;
 
 public class DaoFactory {
-	private DaoFactory() {
-		
-	}
+	private DaoFactory() {}
 	public static IDaoConexion getDaoConexion(String daoType) {
 		IDaoConexion daoConexion = null;
 		if("jdbc".equalsIgnoreCase(daoType)) {
